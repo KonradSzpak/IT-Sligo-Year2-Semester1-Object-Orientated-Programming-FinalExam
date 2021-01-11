@@ -1,0 +1,43 @@
+﻿<Window x:Class="FinalExam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assessment2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.496,0.484">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160*"/>
+            <RowDefinition Height="259*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="lbxAccounts" HorizontalAlignment="Left" Height="278" Margin="88,97,0,0" VerticalAlignment="Top" Width="207" Loaded="lbxEmployees_Loaded" SelectionChanged="lbxEmployees_SelectionChanged" Grid.RowSpan="2"/>
+        <TextBlock x:Name="tbxAccounts" HorizontalAlignment="Left" Margin="88,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Accounts List"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="tblkTransactionAmount" HorizontalAlignment="Left" Margin="320,172,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top" Width="121" Grid.Row="1" Grid.ColumnSpan="2" Height="18"/>
+        <TextBlock x:Name="tblkInterestDate" HorizontalAlignment="Left" Margin="320,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.245,0.562" Grid.ColumnSpan="2" Grid.Row="1" Text="Interest Date"/>
+        <TextBlock x:Name="tblkBalance1" HorizontalAlignment="Left" Margin="320,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Balance" Grid.ColumnSpan="2" Grid.Row="1"/>
+        <TextBlock x:Name="tblkLastName" HorizontalAlignment="Left" Margin="320,134,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="16" Width="62"/>
+        <TextBlock x:Name="tblkAccountDetails" HorizontalAlignment="Left" Margin="320,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="20" Width="96"><Run Text="Account Details"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="btnDeposit" Content="Deposit" HorizontalAlignment="Left" Margin="333,72,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click" Grid.Column="1"/>
+        <Button x:Name="btnWithdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="333,117,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click" Grid.Column="1"/>
+        <Button x:Name="btnInterest" Content="Interest" HorizontalAlignment="Left" Margin="333,3,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click" Grid.Column="1" Grid.Row="1"/>
+        <TextBlock x:Name="tblkFirstName" HorizontalAlignment="Left" Margin="320,97,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="cbxSavAcc" Content="Savings Accounts" HorizontalAlignment="Left" Margin="208,47,0,0" VerticalAlignment="Top" Checked="cbx_Checked" Unchecked="cbx_Checked"/>
+        <CheckBox x:Name="cbxCurrAcc" Content="Current Accounts" HorizontalAlignment="Left" Margin="88,47,0,0" VerticalAlignment="Top" Checked="cbx_Checked" Unchecked="cbx_Checked"/>
+        <TextBlock x:Name="tblkAccountType" HorizontalAlignment="Left" Margin="320,55,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="17" Width="96"/>
+        <TextBlock x:Name="tblkBalance2" HorizontalAlignment="Left" Margin="320,89,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="17" Width="55"/>
+        <TextBox x:Name="tbxTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="146,167,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="tblkInterestDate2" Grid.Column="1" HorizontalAlignment="Left" Margin="143,129,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBalance22" Grid.Column="1" HorizontalAlignment="Left" Margin="146,93,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccountType2" Grid.Column="1" HorizontalAlignment="Left" Margin="143,59,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkBalance12" Grid.Column="1" HorizontalAlignment="Left" Margin="146,25,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkLastName2" Grid.Column="1" HorizontalAlignment="Left" Margin="146,147,0,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkFirstName2" Grid.Column="1" HorizontalAlignment="Left" Margin="146,117,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblkAccountDetails2" Grid.Column="1" HorizontalAlignment="Left" Margin="143,76,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
